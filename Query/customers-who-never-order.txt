@@ -1,0 +1,2 @@
+#https://leetcode.com/problems/customers-who-never-order/
+select Name from Customers where Id in (select CustomerId from Orders)

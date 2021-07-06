@@ -1,0 +1,4 @@
+# https://leetcode.com/problems/employees-earning-more-than-their-managers
+select B.Name as Employee from Employee A, Employee B
+where A.Id = B.ManagerId and 
+A.Salary < B.Salary
